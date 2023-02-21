@@ -1,0 +1,50 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class ExercicioCondicaoTabela {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Produtos na Lacnchonete: ");
+		System.out.printf("1-Cachorro quente %n2-X-salada %n3-X-bacon%n4-Torrada Simples %n5-Refrigerante %n ");
+		System.out.println("Escolha o produto");
+		int codigo;
+		codigo = sc.nextInt();
+		
+		System.out.println("Digite a quantidade");
+		int quantidade;
+		quantidade = (int) sc.nextDouble(); 
+		
+		
+		if (codigo > 5 || codigo <= 0 || quantidade <= 0){
+			System.out.println("Digite um codigo valido ou não digitou a quantidade.");			
+			}
+		
+		else if (codigo == 1) {
+			System.out.printf("total: %.2f %n", quantidade * 4.00);				
+		}
+		
+		else if (codigo == 2) {
+			System.out.printf("total: %.2f %n", quantidade * 4.50);			
+		}
+		
+		else if (codigo == 3) {
+			System.out.printf("total: %.2f %n", quantidade * 5.00);				
+		}
+		
+		else if (codigo == 4) {
+			System.out.printf("total: %.2f %n", quantidade * 2.00);				
+		}
+		
+		else if (codigo == 5) {
+			System.out.printf("total: %.2f %n", quantidade * 1.50);				
+		}
+		
+		sc.close();	
+	}
+		
+		
+
+	}
