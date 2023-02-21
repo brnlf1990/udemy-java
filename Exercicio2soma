@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Exercicio2soma {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		int x, y;
+		
+		x = sc.nextInt();
+		y = sc.nextInt();
+		int soma = x + y;
+		System.out.println("Entrada");
+		System.out.println(x);
+		System.out.println(y);
+		System.out.println("Soma ");
+		System.out.println(soma);
+		sc.close();
+	}
+
+}
