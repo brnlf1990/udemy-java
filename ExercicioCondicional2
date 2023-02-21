@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class ExercicioCondicional2 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int x, y;
+		
+		x = sc.nextInt();
+		y = sc.nextInt();
+		
+		
+		
+		if (x >= y && x % y == 0) {
+			
+			System.out.println("Sao multiplos");
+		}
+		else if (y >= x && y % x == 0) {
+			
+			System.out.println("Sao multiplos");
+		}
+		else {
+			System.out.println("Nao sao multiplos");
+		}
+		
+		sc.close();
+	}
+
+}
