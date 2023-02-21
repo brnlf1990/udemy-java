@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class ExercicioHoraJogo {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		int horarioA, horarioB;
+		
+		horarioA = sc.nextInt();
+		horarioB = sc.nextInt();
+		
+		if (horarioA > horarioB) {
+			System.out.println("Jogo durou: ");
+			System.out.println(24- (horarioA - horarioB)  + " horas");
+		}
+		else if (horarioA == horarioB) {
+			System.out.println("Jogo durou 24 horas ");
+		}
+		
+		else {
+			System.out.println("Jogo durou: ");
+			System.out.println(horarioB - horarioA + " horas");
+		}
+		sc.close();
+
+	}
+
+}
